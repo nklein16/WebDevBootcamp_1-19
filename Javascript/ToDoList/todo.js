@@ -1,4 +1,3 @@
-
 var todos = ["take out trash"];
 window.setTimeout(function() {
 	
@@ -9,7 +8,6 @@ window.setTimeout(function() {
 		var answer = prompt("What would you like to do?");
 	
 		if (answer === "list") {
-
 			listToDos();
 		}
 
@@ -24,17 +22,10 @@ window.setTimeout(function() {
 			// console output
 			listToDos();			
 			
-
 			// add item to list on webpage
-			// var parent = document.getElementById("myList");		// access parent element
-			
 			addToDo(newToDo);
 			console.log(newToDo + " added to the list");
-			
-			// var node = document.createElement("li");			// create new list element
-			// var newText = document.createTextNode(newToDo);	// create new child node from newText
-			// node.appendChild(newText);						// append newtext item to child node
-			// parent.appendChild(node);							// append child node to parent element 
+
 		}
 
 		else if (answer === "delete") {
@@ -54,9 +45,7 @@ window.setTimeout(function() {
 			listToDos();
 			
 			// remove item from list on webpage
-			//var parent = document.getElementById("#myList");		// access parent element			
 			deleteToDo(index);
-
 			console.log(removedItem + " was removed from the Todo list");
 
 		}
@@ -101,8 +90,7 @@ function deleteToDo(index) {
 }
 
 /*
-
-Items to do (for testing):
+To Do Items (for testing):
 
 0. take out trash
 1. clean room
@@ -110,5 +98,4 @@ Items to do (for testing):
 3. do laundry
 4. walk dog
 5. water garden
-
 */ 
