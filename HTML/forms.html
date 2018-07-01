@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Demo</title>
+</head>
+<body>
+
+<h2>Form 1 syntax</h2>
+
+<form>
+	<label for="username">Username:
+		<input type="text" placeholder="username" name="username" required>
+	</label>
+	<label for="password">Password:
+		<input type="password" placeholder="password" name="password" required>
+	</label>
+	<input type="submit" value="Send">
+	<button>
+		<input type="reset" value="Reset">
+	</button>
+</form>
+
+<h2>Form 2 syntax</h2>
+
+<form>
+	<label for="email">Email:</label>
+	<input id="email" type="email" name="email" required><br>
+	<label for="password">Password:</label>
+	<input id="password" type="password" name="password" required><br>
+	<input type="submit">
+	<button>
+		<input type="reset" value="Reset Form">
+	</button>
+</form>
+
+<h2>Dropdowns and Radio Buttons</h2>
+
+<p>Do you prefer cats or dogs?</p>
+<form>
+	<input id="cats" type="radio" name="petchoice" value="cats">
+	<label for="cats">Cats</label>
+	<input id="dogs" type="radio" name="petchoice" value="dogs">
+	<label for="dogs">Dogs</label>
+	<!-- <input type="checkbox"> -->
+	<input type="submit">
+	<button>
+		<input type="reset">
+	</button>
+</form>
+</body>
+</html>

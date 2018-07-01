@@ -1,0 +1,70 @@
+/* CSS Notes */
+
+/* Color Notes:
+Red:
+	Hexadecimal: #FF0000;
+	RGB: rgb(255,0,0);
+Green:
+	Hexadecimal: #00FF00;
+	RGB: rgb(0,255,0);
+Blue:
+	Hexadecimal: #0000FF;
+	RGB: rgb(0,0,255);
+White:
+	Hexadecimal: #FFFFFF;
+	RGB: rgb(255,255,255);
+Black:
+	Hexadecimal: #000000;
+	RGB: rgb(0,0,0);
+
+Note that there is also something called RGBA that has a fourth channel
+for the extent to which the letters should be transparent.  The A channel
+ranges from 0.0 - 1.0, so that:
+
+rgba(100, 0, 100, .1) will be a very transparent purple, whereas
+rgba(100, 0, 100, 1) will be a completely opaque (with no transparency) purple.
+
+*/
+
+
+/*	Border Notes:
+		width:
+		color:
+		style:
+*/
+
+
+h1{
+	color: rgb(255,100,80);
+	/* border-color: purple;
+	border-width: 5px;
+	border-style: solid; */
+
+	/* equivalent, shortcut syntax sets all three at once: */
+	/*border: rgb(255,100,80) 8px dashed;*/
+	/*text-align: center; */
+}
+
+h3 {
+	color: white;
+	font-size: 30px;
+	font-style: italic;
+	background: rgba(255,100,80,1);
+}
+
+li {
+	color: white;
+	font-size: 20px;
+	/*border-color: black;
+	border: solid;
+	border-style: double;
+	border-width: 2px;
+	border-right-width: 40px;
+*/}
+
+body {
+	/*background: pink;*/
+	background: url(https://cdn.pixabay.com/photo/2018/05/30/00/24/thunderstorm-3440450__480.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}

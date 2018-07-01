@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page 2: Cascading Style Sheets (CSS)</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="learning.css">
+
+</head>
+<body>
+	<h1>This is page 2</h1>
+
+	<h2>Cascading Style Sheets (CSS)</h2>
+
+	<div>
+		<h3>Selector Basics:</h3>
+		<h4>Structure</h4>
+			<ul>
+				<li>{Property: value}</li>
+			</ul>
+		<h4>Link tag format in HTML</h4>
+		<ul>
+			<li> "<"link rel="stylesheet" type="text/css" href="learning.css">" </li>
+		</ul>
+
+		<h4>Elements</h4>
+
+			<ul>
+				<li>Categories of Elements:</li>
+				<ul>
+					<li>Block-level</li>
+					<ul>
+						<li>Unordered List Element: ul</li>
+						<li>Ordered List Element: ol</li>
+						<li>List Element: li</li>
+						<li>div</li>
+						<li>p</li>
+						<li>form</li>
+						<li>table</li>
+						<li>hr</li>
+						<li>pre (preformatted text line)</li>
+						<li>address</li>
+						<li>blockquote (blockquote tag)</li>
+						<li>dl (definition line)</li>
+						<li>fieldset</li>
+						<li>noscript</li>
+					</ul>
+					<li>Inline</li>
+					<ul>
+						<li>Headings: h1->h6</li>
+						<li>span</li>
+						<li>meta</li>
+						<li>strong (bold)</li>
+						<li>em (italics: emphasis)</li>
+						<li>button</li>
+						<li>input</li>
+						<li>abbr</li>
+						<li>label</li>
+						<li>select</li>
+						<li>a (anchor)</li>
+						<li>img</li>
+					</ul>
+				</ul>
+			</ul>
+
+			<p>There are 3 main ways to select elements. There are by <strong>element</strong>, by <strong>id (#)</strong>, and by
+				<strong>class (".")</strong> selectors.
+			Of the element types, only <strong>block-level</strong> elements can be utilized to select portions of HTML for styling by CSS.</p>
+			
+		<h4>IDs</h4>
+		<ol>
+			<li>The "id" tag is a way to single out a (single) element for css styling.</li>
+			<li>A particular id tag can only be used once per page.</li>
+			<li>There can be multiple ids on a page, so long as they are all unique.</li>
+	
+			<p>Here's an example of using an id in HTML:</p>
+			<img src="using_an_id.png" width="312" height="80"></p>
+
+			<p>Here's an example of calling to an id from within CSS:</p>
+			<img src="calling_to_an_id.png" width="336" height="83"></p>
+
+			<div class="note">
+				<p><strong>Note that the "#"" marker connects the section after it with the associated id tag on the HTML page.  This allows for targeting individual areas on the page.</strong></p>
+			</div>
+		</ol>
+
+		<h4>Classes</h4>
+		<ul>
+			<li>The "class" tag allows us to target more than one area on the page for css styling, whether they are grouped together or not.
+			</li>
+		
+			<p>Here's an example of using a class in HTML:</p>
+			<img src="using_a_class.png" width="403" height="172.5"></p>
+
+			<p>Here's an example of calling to a class from within CSS:</p>
+			<img src="calling_to_a_class.png" width="389" height="89"></p>
+		
+			<div class="note">
+				<p><strong>Note that the "."" marker connects the section following it with a class tag on the associated HTML page.  This allows for targeting more than one area on the page, whether they are grouped together or not.</strong></p>
+			</div>
+		</ul>
+
+		<div class="note">
+			<ul>
+			<p>In fact, there are over 30 types of CSS selectors.  However, we will focus on five (5) of these additional selector types.  They are:</p>
+			</ul>
+		</div>
+		<ul>
+			<li><strong>Star Selectors (*)</strong> - selects everything on the page</li>
+			<li><strong>Descendant Selectors</strong> - takes two or more selectors/tag names and chains them together. An example might be to select all anchor tags located inside an li that is located inside a ul.  Such a descendant selector would have the following structure:  "ul li a { Property: value; }"</li>
+			<li><strong>Adjacent Selectors</strong> - only selects selectors/tag names adjacent to other selectors.   For instance, we may select only those "ul"s that are on the same level as and immediately follow an h4 like so: "h4 + ul { Property: value; }"</li>
+			<li><strong>Attribute Selectors</strong> - A way to select elements based off of any attribute (href, img, input types, etc.).  Here's as example: "a[href="www.google.com"]"{ Property: value; }.  Another example: "input[type="text"]"{ }.</li>
+			<li><strong>nth of type Selectors</strong> - Selects every nth element.  Example: Select final "ul" element.  Format: ul:nth-of-type(3){ Property: value}</li>
+		</ul>
+
+		<h4>Colors</h4>
+		<ul>
+			<li id="red">Red</li>
+				<ul>
+					<li>Hexadecimal: #FF0000;</li>
+					<li>RGB: rgb(255,0,0);</li>
+				</ul>
+			<li id="green">Green</li>
+			<ul>
+				<li>Hexadecimal: #00FF00;</li>
+				<li>RGB: rgb(0,255,0);</li>
+			</ul>
+			<li id="blue">Blue</li>
+			<ul>
+				<li>Hexadecimal: #0000FF;</li>
+				<li>RGB: rgb(0,0,255);</li>
+			</ul>
+			<li id="white">White</li>
+			<ul>
+				<li>Hexadecimal: #FFFFFF;</li>
+				<li>RGB: rgb(255,255,255);</li>
+			</ul>
+			<li>Black</li>
+			<ul>
+				<li>Hexadecimal: #000000;</li>
+				<li>RGB: rgb(0,0,0);</li>
+			</ul>
+			<p>Note that there is also something called RGBA that has a fourth channel
+			for the extent to which the letters should be transparent.  The A channel
+			ranges from 0.0 - 1.0, so that:<br>
+			rgba(100, 0, 100, .1) will be a very transparent purple, whereas
+			rgba(100, 0, 100, 1) will be a completely opaque (with no transparency) purple.*/</p>
+		</ul>
+	</div>
+</body>
+</html>

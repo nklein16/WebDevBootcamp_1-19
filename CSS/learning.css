@@ -1,0 +1,32 @@
+body {
+	background: rgba(150,150,200,.2);
+	background: cornflowerblue;
+}
+
+h3 {
+	margin-left: 15px;
+}
+
+h4 {
+	margin-left: 30px;
+}
+
+.note {
+	font-size: 18px;
+}
+
+#red {
+	color: red;
+}
+
+#green {
+	color: green;
+}
+
+#blue {
+	color: blue;
+}
+
+#white {
+	color: white;
+}

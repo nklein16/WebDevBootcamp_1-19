@@ -1,0 +1,25 @@
+body {	
+	/*background: orange;*/
+}
+
+li {
+	border: 2px solid red;
+}
+
+#special {
+	background-color: yellow;
+}
+
+.completed {
+	text-decoration: line-through;
+}
+
+/* The "#"" marker connects the section after it with a single id tag
+   on the associated HTML page.  This allows for targeting individual
+   areas on the page.
+
+   The "."" marker connects the section following it with a class tag
+   on the associated HTML page.  This allows for targeting more than one
+   area on the page, whether they are grouped together or not.
+
+   */

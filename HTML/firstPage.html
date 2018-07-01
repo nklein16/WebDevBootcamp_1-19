@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- metadata goes in the head -->
+	<meta charset="UTF-8">
+	<title>My First Page</title>
+</head>
+<body>
+<!-- content goes in the body -->
+<h1>This is my first tag</h1>
+<h2>This is another heading</h2>
+<h6>This is the smallest heading</h6>
+<p><strong>It</strong> is a long <em>established fact</em> that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+</p>
+
+<hr 5px length=80px>
+
+<ul>
+	<li>A</li>
+	<li>B</li>
+	<li>C</li>
+	<li>D</li>
+	<li>E</li>
+</ul>
+<ol>
+	<li>One</li>
+	<li>Two</li>
+	<li>Three</li>
+	<li>Four</li>
+	<li>Five
+		<ul>
+			<li>Blue</li>
+			<li>Green</li>
+		</ul>
+	</li>
+</ol>
+
+<!-- <form action="" method="GET/POST/PUT">
+	<input type="text/date/checkbox/file/color/" name=""/"username">
+	<label></label>
+</form>
+ -->
+<hr 5px length=80px>
+
+ <h3>Sign In</h3>
+
+<form action="" method="POST">
+	<input type="text" placeholder="username" name="username" required><br>
+	<input type="password" placeholder="password" name="password" required><br><br>
+	<input type="submit" value="Send">
+	<input type="reset" value="Reset">
+	<p>Forgot your password? We'll email you a new one:
+	<input type="submit" value="Send"></p>
+</form>
+
+<h3>Enter User Information</h3>
+
+<form action="" method="GET">
+	<label for="Firstname">First Name:</label>
+	<input id="Firstname" type="text" name="Firstname" required><br>
+	<label for="Lastname">Last Name:</label>
+	<input id="Lastname" type="text" name="Lastname" required><br>
+	<label for="Address">Address:</label>
+	<input id="Address" type="text" name="Address"><br>
+	<label for="City">City:</label>
+	<input id="City" type="text" name="City"><br>
+	<label for="State" name="State">State:</label>
+	<select id="State" name="State">
+		<option>Choose</option>
+		<option value="AL">AL</option>
+		<option value="AK">AK</option>
+		<option value="AZ">AZ</option>
+		<option value="AR">AR</option>
+		<option value="CA">CA</option>
+		<option value="CO">CO</option>
+		<option value="CT">CT</option>
+		<option value="DE">DE</option>
+		<option value="DC">DC</option>
+		<option value="FL">FL</option>
+		<option value="GA">GA</option>
+		<option value="HI">HI</option>
+		<option value="ID">ID</option>
+		<option value="IL">IL</option>
+		<option value="IN">IN</option>
+		<option value="IA">IA</option>
+		<option value="KS">KS</option>
+		<option value="KY">KY</option>
+		<option value="LA">LA</option>
+		<option value="ME">ME</option>
+		<option value="MD">MD</option>
+		<option value="MA">MA</option>
+		<option value="MI">MI</option>
+		<option value="MN">MN</option>
+		<option value="MS">MS</option>
+		<option value="MO">MO</option>
+		<option value="MT">MT</option>
+		<option value="NE">NE</option>
+		<option value="NV">NV</option>
+		<option value="NH">NH</option>
+		<option value="NJ">NJ</option>
+		<option value="NM">NM</option>
+		<option value="NY">NY</option>
+		<option value="NC">NC</option>
+		<option value="ND">ND</option>
+		<option value="OH">OH</option>
+		<option value="OK">OK</option>
+		<option value="OR">OR</option>
+		<option value="PA">PA</option>
+		<option value="RI">RI</option>
+		<option value="SC">SC</option>
+		<option value="SD">SD</option>
+		<option value="TN">TN</option>
+		<option value="TX">TX</option>
+		<option value="UT">UT</option>
+		<option value="VT">VT</option>
+		<option value="VA">VA</option>
+		<option value="WA">WA</option>
+		<option value="WV">WV</option>
+		<option value="WI">WI</option>
+		<option value="WY">WY</option>
+	</select><br>
+	<label for="ZIP">ZIP:</label>
+	<input type="text" name="ZIP" placeholder="xxxxx" maxlength="5"><br>
+	<label for="Tele">Telephone:</label>
+	<input type="tel" id="Telephone" placeholder="(xxx) xxx-xxxx" maxlength="10" required><br>
+	<label for="emailAddress">Email Address:</label>
+	<input type="email" id=emailAddress placeholder="default@company.com" required><br>
+	<label for="date">Date of Birth:</label>
+	<input type="date" name="Date of Birth"><br>
+
+	<input id="male" type="radio" name="Gender" value="Male">
+	<label for="male">Male</label>
+	<input id="female" type="radio"  name="Gender" value="Female">
+	<label for="female">Female</label>
+	
+	<p>If you are already a member, check here:
+	<input type="checkbox" name="Check Here"></p>
+	<p>Please provide feedback on your experience thus far:</p>
+	<textarea name="feedback" rows="15" cols="80">Write something here</textarea>
+	<br>
+	<button>
+		<input type="submit" value="Send">
+	</button>
+	<button>
+		<input type="reset" value="Reset">
+	</button>
+</form>
+
+</body>
+</html>
