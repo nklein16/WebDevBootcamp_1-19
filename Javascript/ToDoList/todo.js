@@ -1,17 +1,17 @@
-var todos = ["take out trash"];
+var todos = new Array();
+
 window.setTimeout(function() {
-	
 
-	var val = true
-	while (val) {
+	var answer = prompt("What would you like to do?");
+	var condition = true;
 
-		var answer = prompt("What would you like to do?");
-	
+	while (condition) {
+
 		if (answer === "list") {
 			listToDos();
 		}
 
-		else if (answer === "new") {
+		else if (answer === "add") {
 
 			// ask for new todo
 			var newToDo = prompt("Enter new todo");
@@ -34,7 +34,7 @@ window.setTimeout(function() {
 			var index = prompt("Enter index of todo to delete");
 			
 			while (index > todos.length) {
-				alert("That item is no longer in the list.  Try again.");
+				alert("That item is no longer in the list. Try again.");
 				index = prompt("Enter index of todo to delete");
 			}
 
@@ -52,19 +52,27 @@ window.setTimeout(function() {
 
 		else if (answer === "quit") {
 			console.log("Ok, you quit the app!");
-			val = false;
+			condition = false;
+			break;
 		}
 
+		else {
+			alert("That was an incorrect response. Please try again.");
+		}
+
+	var answer = prompt("What would you like to do?");
 	}
 
-}, 500);
+
+
+}, 1500);
 
 
 function listToDos() {
 
 	console.clear();
 	console.log("**********\n");
-	var i = 0
+	var i = 0;
 	todos.forEach(function(todo){
 		console.log(i + ": " + todo);
 		i++;
