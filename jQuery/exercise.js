@@ -6,7 +6,7 @@ else {
     alert("no jQuery");
 }
 
-// Select all dics and give them a purple background
+// Select all divs and give them a purple background
 $("div").css("background", "purple");
 
 // Select all the dics with class "highlight" and make them 200px wide
